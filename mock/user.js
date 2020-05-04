@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2020-03-31 21:33:56
+ * @LastEditTime: 2020-05-04 16:43:48
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: /stock/mock/user.js
+ */
 
 const tokens = {
   admin: {
@@ -5,6 +13,9 @@ const tokens = {
   },
   editor: {
     token: 'editor-token'
+  },
+  luchun: {
+    token: 'admin-token'
   }
 }
 

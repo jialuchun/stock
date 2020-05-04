@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2020-03-31 21:33:56
+ * @LastEditTime: 2020-05-04 16:44:24
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /stock/src/utils/validate.js
+ */
 /**
  * Created by PanJiaChen on 16/11/18.
  */
@@ -15,7 +23,8 @@ export function isExternal(path) {
  * @returns {Boolean}
  */
 export function validUsername(str) {
-  const valid_map = ['admin', 'editor']
+  // const valid_map = ['admin', 'editor']
+  const valid_map = ['luchun']
   return valid_map.indexOf(str.trim()) >= 0
 }
 
