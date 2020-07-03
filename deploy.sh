@@ -1,7 +1,7 @@
 ###
  # @Author: your name
  # @Date: 2020-04-01 01:17:09
- # @LastEditTime: 2020-07-03 13:53:45
+ # @LastEditTime: 2020-07-03 15:18:12
  # @LastEditors: luchun
  # @Description: In User Settings Edit
  # @FilePath: /stock/deploy.sh
@@ -13,7 +13,7 @@
 set -e
 
 # build
-npm run build
+npm run build:prod
 
 # navigate into the build output directory
 cd dist
