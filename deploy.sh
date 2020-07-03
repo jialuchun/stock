@@ -1,8 +1,8 @@
 ###
  # @Author: your name
  # @Date: 2020-04-01 01:17:09
- # @LastEditTime: 2020-04-01 01:28:32
- # @LastEditors: Please set LastEditors
+ # @LastEditTime: 2020-07-03 13:53:45
+ # @LastEditors: luchun
  # @Description: In User Settings Edit
  # @FilePath: /stock/deploy.sh
  ###
@@ -26,7 +26,7 @@ git add -A
 git commit -m 'deploy'
 
 # if you are deploying to https://<USERNAME>.github.io
-git push -f git@github.com:jialuchun/jialuchun.github.io.git master
+#git push -f git@github.com:jialuchun/jialuchun.github.io.git master
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
 git push -f git@github.com:jialuchun/stock.git master:gh-pages
