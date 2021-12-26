@@ -59,7 +59,7 @@ export default {
       this.chart.setOption({
         backgroundColor: '#344b58',
         title: {
-          text: '每月盈亏&累计盈亏统计',
+          text: '2021年统计',
           x: '20',
           top: '20',
           textStyle: {
