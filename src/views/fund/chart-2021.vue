@@ -28,7 +28,8 @@ export default {
         50980.66,
         92870.36, // 2021年9月
         -35055.37,
-        9432.44
+        9432.44,
+        -46194.65
       ],
       formatProfitData: [],
       totalProfit: []
