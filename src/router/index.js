@@ -10,6 +10,7 @@ import Layout from '@/layout'
 // import componentsRouter from './modules/components'
 import chartsRouter from './modules/charts'
 import fundRouter from './modules/fund'
+import aRAndLiRouter from './modules/ar-li'
 // import tableRouter from './modules/table'
 // import nestedRouter from './modules/nested'
 
@@ -204,6 +205,7 @@ export const asyncRoutes = [
   // componentsRouter,
   chartsRouter,
   fundRouter,
+  aRAndLiRouter,
   // nestedRouter,
   // tableRouter,
 
