@@ -19,7 +19,10 @@ export default {
       chart: null,
       profit: [
         -199452.93, // 2022年1月
-        100775.00
+        100775.00,
+        -1630.65,
+        135414.40,
+        32657.91
       ],
       formatProfitData: [],
       totalProfit: []
