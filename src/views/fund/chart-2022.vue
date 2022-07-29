@@ -23,7 +23,8 @@ export default {
         -1630.65,
         135414.40,
         32657.91,
-        -19750.27
+        -19750.27,
+        -20438.72
       ],
       formatProfitData: [],
       totalProfit: []
