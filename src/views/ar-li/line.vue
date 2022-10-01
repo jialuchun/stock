@@ -69,7 +69,8 @@ export default {
         12676.73,
         12676.73,
         12676.73,
-        12676.73
+        12676.73,
+        105915.81 // 2022年8月 + 赔偿
       ], // 每月收入 2018年5月开始
       profitData: [],
       fundAmount: [
@@ -124,6 +125,7 @@ export default {
         0,
         0,
         6000,
+        0,
         0
       ],
       totalFundAmount: []
