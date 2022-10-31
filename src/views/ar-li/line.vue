@@ -63,14 +63,16 @@ export default {
         12676.73,
         18076.73,
         12676.73,
-        23458.81, // 2022年1月 + 奖金
-        13273.81,
+        13273.81, // 2022年1月
+        23458.81,
+        13267.57,
         12676.73,
         12676.73,
         12676.73,
         12676.73,
         12676.73,
-        105915.81 // 2022年8月 + 赔偿
+        105915.81,
+        0
       ], // 每月收入 2018年5月开始
       profitData: [],
       fundAmount: [
@@ -126,7 +128,8 @@ export default {
         0,
         6000,
         0,
-        0
+        0,
+        6000
       ],
       totalFundAmount: []
     }
@@ -194,7 +197,7 @@ export default {
               color: '#57617B'
             }
           },
-          data: this.getYearAndMonth('2018-05', this.getCurrentDate())
+          data: this.getYearAndMonth('2018-04', this.getCurrentDate())
         }],
         yAxis: [{
           type: 'value',
