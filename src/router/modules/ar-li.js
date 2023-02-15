@@ -23,6 +23,11 @@ const aRAndLiRouter = {
       component: () => import('@/views/ar-li/chart-2022'),
       name: '2022年负债&应收',
       meta: { title: '2022年负债', noCache: true }
+    }, {
+      path: '2023',
+      component: () => import('@/views/ar-li/chart-2023'),
+      name: '2023年负债&应收',
+      meta: { title: '2023年负债', noCache: true }
     }
   ]
 }
