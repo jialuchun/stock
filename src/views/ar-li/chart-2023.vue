@@ -18,10 +18,12 @@ export default {
     return {
       chart: null,
       ARData: [
-        8.2 // 2023年1月
+        8.2, // 2023年1月
+        6.3
       ],
       LIData: [
-        38.25
+        38.25,
+        38.02
       ]
     }
   },
