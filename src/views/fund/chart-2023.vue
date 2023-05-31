@@ -21,7 +21,8 @@ export default {
         64453.76, // 2023年1月
         23529.48,
         35098.87,
-        -106649.70
+        -106649.70,
+        10104.93
       ],
       formatProfitData: [],
       totalProfit: []
