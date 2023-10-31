@@ -140,7 +140,8 @@ export default {
         0,
         6000,
         0,
-        0
+        0,
+        6000
       ],
       totalFundAmount: []
     }
