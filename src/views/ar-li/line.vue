@@ -146,6 +146,7 @@ export default {
         0,
         6000, // 2024年1月
         0,
+        0,
         0
       ],
       totalFundAmount: []
