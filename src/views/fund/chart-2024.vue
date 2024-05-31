@@ -21,7 +21,8 @@ export default {
         14957.09, // 2024年1月
         8120.22,
         -2858.12,
-        5813.27
+        5813.27,
+        -4202.71
       ],
       formatProfitData: [],
       totalProfit: []
