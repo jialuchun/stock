@@ -152,7 +152,8 @@ export default {
         0,
         0,
         0,
-        0
+        0,
+        2255 // 2024年10月失业金
       ],
       totalFundAmount: []
     }
