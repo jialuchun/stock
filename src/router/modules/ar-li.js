@@ -33,6 +33,11 @@ const aRAndLiRouter = {
       component: () => import('@/views/ar-li/chart-2024'),
       name: '2024年负债&应收',
       meta: { title: '2024年负债', noCache: true }
+    }, {
+      path: '2025',
+      component: () => import('@/views/ar-li/chart-2025'),
+      name: '2025年负债&应收',
+      meta: { title: '2025年负债', noCache: true }
     }
   ]
 }

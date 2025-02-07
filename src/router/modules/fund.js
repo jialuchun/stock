@@ -42,6 +42,12 @@ const fundRouter = {
       component: () => import('@/views/fund/chart-2024'),
       name: '2024年统计',
       meta: { title: '2024年统计', noCache: true }
+    },
+    {
+      path: 'stock2025',
+      component: () => import('@/views/fund/chart-2025'),
+      name: '2025年统计',
+      meta: { title: '2025年统计', noCache: true }
     }
   ]
 }
