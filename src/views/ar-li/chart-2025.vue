@@ -18,11 +18,12 @@ export default {
     return {
       chart: null,
       ARData: [
-        17.39 // 2025年1月
+        38.67, // 2025年1月
+        41.74
       ],
       LIData: [
-        38.67
-
+        34.64,
+        32.22
       ]
     }
   },
