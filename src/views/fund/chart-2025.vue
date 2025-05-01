@@ -19,7 +19,8 @@ export default {
       chart: null,
       profit: [
         -1602.15, // 2025年1月
-        537
+        537,
+        642
       ],
       formatProfitData: [],
       totalProfit: []

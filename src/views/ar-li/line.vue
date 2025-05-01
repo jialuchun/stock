@@ -157,6 +157,8 @@ export default {
         2255,
         2255,
         2255,
+        2255,
+        2255,
         2255
       ],
       totalFundAmount: []
