@@ -18,6 +18,7 @@ export default {
   data() {
     return {
       chart: null,
+      totalAmount: 0,
       monthProfit: [
         6879.91, // 2018年5月
         9835.00,
@@ -71,10 +72,8 @@ export default {
         12676.73,
         12676.73,
         12676.73,
-        105915.81,
-        0
+        105915.81
       ], // 每月收入 2018年5月开始
-      profitData: [],
       fundAmount: [
         0, // 2018年5月
         0,
@@ -144,7 +143,78 @@ export default {
         6000,
         0,
         0,
-        6000, // 2024年1月
+        6000 // 2024年1月
+      ],
+      unemploymentAmount: [
+        0, // 2018年5月
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0, // 2019年
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0, // 2020年1月
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0, // 2021年1月
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0, // 2022年1月
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0, // 2023年1月
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0, // 2024年1月
         0,
         0,
         0,
@@ -163,7 +233,9 @@ export default {
         2255,
         2255
       ],
-      totalFundAmount: []
+      profitData: [],
+      totalFundAmount: [],
+      totalUnemploymentAmount: []
     }
   },
   mounted() {
@@ -185,7 +257,7 @@ export default {
         backgroundColor: '#394056',
         title: {
           top: 20,
-          text: '收入&公积金提取',
+          text: `收入&提取 总计：${this.totalAmount}元`,
           textStyle: {
             fontWeight: 'normal',
             fontSize: 16,
@@ -207,7 +279,7 @@ export default {
           itemWidth: 14,
           itemHeight: 5,
           itemGap: 13,
-          data: ['收入累计', '公积金累计', '每月收入'],
+          data: ['收入累计', '公积金累计', '失业金累计', '每月收入'],
           right: '4%',
           textStyle: {
             fontSize: 12,
@@ -311,6 +383,40 @@ export default {
           },
           data: this.totalFundAmount
         }, {
+          name: '失业金累计',
+          type: 'line',
+          smooth: true,
+          symbol: 'circle',
+          symbolSize: 5,
+          showSymbol: false,
+          lineStyle: {
+            normal: {
+              width: 1
+            }
+          },
+          areaStyle: {
+            normal: {
+              color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                offset: 0,
+                color: 'rgb(103, 194, 58, 0.3)'
+              }, {
+                offset: 0.8,
+                color: 'rgba(103, 194, 58, 0)'
+              }], false),
+              shadowColor: 'rgba(0, 0, 0, 0.1)',
+              shadowBlur: 10
+            }
+          },
+          itemStyle: {
+            normal: {
+              color: 'rgb(103, 194, 58)',
+              borderColor: 'rgba(103, 194, 58, 0.2)',
+              borderWidth: 12
+
+            }
+          },
+          data: this.totalUnemploymentAmount
+        }, {
           name: '每月收入',
           type: 'line',
           smooth: true,
@@ -389,6 +495,11 @@ export default {
         this.totalFundAmount.push(+(prev + cur).toFixed(2))
         return prev + cur
       }, 0)
+      this.unemploymentAmount.reduce((prev, cur, index, arr) => {
+        this.totalUnemploymentAmount.push(+(prev + cur).toFixed(2))
+        return prev + cur
+      }, 0)
+      this.totalAmount = this.profitData.at(-1) + this.totalFundAmount.at(-1) + this.totalUnemploymentAmount.at(-1)
     }
   }
 }

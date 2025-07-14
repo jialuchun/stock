@@ -16,8 +16,8 @@ const aRAndLiRouter = {
     {
       path: 'income',
       component: () => import('@/views/ar-li/line'),
-      name: '收入&公积金提取',
-      meta: { title: '收入&公积金提取', noCache: true }
+      name: '收入&提取',
+      meta: { title: '收入&提取', noCache: true }
     }, {
       path: '2022',
       component: () => import('@/views/ar-li/chart-2022'),
