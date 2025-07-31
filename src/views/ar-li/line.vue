@@ -231,7 +231,8 @@ export default {
         2255,
         2255,
         2255,
-        2255
+        2255,
+        2305
       ],
       profitData: [],
       totalFundAmount: [],
