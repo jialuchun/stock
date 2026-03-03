@@ -18,10 +18,12 @@ export default {
     return {
       chart: null,
       ARData: [
-        49.58 // 2026年1月
+        49.58, // 2026年1月
+        49.90
       ],
       LIData: [
-        40.53
+        40.53,
+        43.63
       ]
     }
   },
@@ -51,8 +53,8 @@ export default {
         title: {
           text: '2026年负债&应收(W)',
           subtext: '月底统计',
-          x: '20',
-          top: '20'
+          x: '20'
+        //   top: '20'
         },
         tooltip: {
           trigger: 'axis'

@@ -18,7 +18,8 @@ export default {
     return {
       chart: null,
       profit: [
-        338 // 2026年1月
+        338, // 2026年1月
+        142
       ],
       formatProfitData: [],
       totalProfit: []
