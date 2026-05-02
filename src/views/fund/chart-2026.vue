@@ -20,7 +20,8 @@ export default {
       profit: [
         338, // 2026年1月
         142,
-        -730.46
+        -730.46,
+        -191
       ],
       formatProfitData: [],
       totalProfit: []
