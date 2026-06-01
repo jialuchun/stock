@@ -21,7 +21,8 @@ export default {
         338, // 2026年1月
         142,
         -730.46,
-        -191
+        -191,
+        439
       ],
       formatProfitData: [],
       totalProfit: []
