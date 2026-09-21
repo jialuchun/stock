@@ -124,7 +124,8 @@ export default {
         -191,
         439,
         -1017,
-        -413
+        -413,
+        203
       ],
       profitData: [],
       totalAmount: [
@@ -233,7 +234,8 @@ export default {
         5703,
         6142,
         5125,
-        4712
+        4712,
+        4915
       ]
     }
   },
